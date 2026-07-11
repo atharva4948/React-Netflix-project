@@ -18,7 +18,7 @@ function Home(){
             setMovies(popularMovies)
         } catch (error) {
             console.log(error)
-            setError("Error fetching popular movies:", error)
+            setError("Error fetching popular movies:")
         }
         finally {
             setLoading(false)
@@ -30,7 +30,7 @@ function Home(){
 
     }, []);
 
-    const handleSearch = (e) => {
+    const handleSearch = async (e) => {
         e.preventDefault()
         if (!searchQuery.trim()) return
         if(loading) return
@@ -39,21 +39,27 @@ function Home(){
         try{
             const searchResults = await searchMovies(searchQuery) 
             setError(null)        
-
+            setMovies(searchResults)
         }catch(error){
-            consol.log(error)
-            setError("Error searching movies:", error)
+            console.log(error)
+            setError("Error searching movies:")
 
         }finally{
             setLoading(false)
         }
-        setSearchQuery("----------")
+        setSearchQuery("")
     
     }
 return (
     <div className="home">
         <form onSubmit={handleSearch} className="search-form">
-            ...
+            <input
+                type="text"
+                placeholder="Search movies..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button type="submit">Search</button>
         </form>
 
         {
