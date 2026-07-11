@@ -1,16 +1,95 @@
-# React + Vite
+# 🎬 React Netflix Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive movie discovery web application built with **React** and **Vite** that allows users to browse popular movies and search for films using The Movie Database (TMDB) API.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse popular movies
+- Search movies by title
+- Responsive user interface
+- Dynamic movie cards
+- Real-time API integration with TMDB
+- Fast development using Vite
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- TMDB API
+- Git & GitHub
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── MovieCard.jsx
+│   └── NavBar.jsx
+├── pages/
+│   └── Home.jsx
+├── services/
+│   └── Api.js
+├── CSS/
+└── App.jsx
+```
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/atharva4948/React-Netflix-project.git
+```
+
+Navigate to the project
+
+```bash
+cd React-Netflix-project
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+## 🔑 API
+
+This project uses **The Movie Database (TMDB) API** to fetch:
+
+- Popular Movies
+- Movie Search Results
+
+> Create your own API key from https://developer.themoviedb.org/ and replace it in the API configuration before running the project.
+
+## 📸 Screenshots
+
+_Add screenshots of the Home page and Search page here._
+
+## 🎯 Future Improvements
+
+- Add Favorites functionality
+- User Authentication
+- Pagination
+- Genre Filtering
+- Movie Details Page
+- Dark/Light Theme
+- Infinite Scrolling
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+## 👨‍💻 Author
+
+**Atharva Patil**
+
+GitHub: https://github.com/atharva4948
